@@ -1,0 +1,52 @@
+Cadastro
+
+VAR
+    nome, endereco, cidade, cpf, rg, nomePai, nomeMae: CARACTERE
+    idade: INTEIRO
+    peso, rendaBruta: REAL
+
+INICIO
+    ESCREVA " Cadastro de Usuário "
+    ESCREVA "Digite o nome:"
+    LEIA nome
+
+    ESCREVA "Digite o endereço:"
+    LEIA endereco
+
+    ESCREVA "Digite a cidade:"
+    LEIA cidade
+
+    ESCREVA "Digite o CPF:"
+    LEIA cpf
+
+    ESCREVA "Digite o RG:"
+    LEIA rg
+
+    ESCREVA "Digite a idade:"
+    LEIA idade
+
+    ESCREVA "Digite o nome do pai:"
+    LEIA nomePai
+
+    ESCREVA "Digite o nome da mãe:"
+    LEIA nomeMae
+
+    ESCREVA "Digite o peso:"
+    LEIA peso
+
+    ESCREVA "Digite a renda bruta:"
+    LEIA rendaBruta
+
+    // Exibir informações cadastradas
+    ESCREVA "----- Informações Cadastradas -----"
+    ESCREVA "Nome: " + nome
+    ESCREVA "Endereço: " + endereco
+    ESCREVA "Cidade: " + cidade
+    ESCREVA "CPF: " + cpf
+    ESCREVA "RG: " + rg
+    ESCREVA "Idade: " + idade
+    ESCREVA "Nome do Pai: " + nomePai
+    ESCREVA "Nome da Mãe: " + nomeMae
+    ESCREVA "Peso: " + peso
+    ESCREVA "Renda Bruta: " + rendaBruta
+FIM
