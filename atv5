@@ -1,0 +1,68 @@
+Na tabela em anexo, encontramos dados de 4 jogadores de um game que contemplam os pontos e moedas obtidos durante as partidas e se conseguiram lutar ou não com o chefe.
+
+Baseado nos dados desses jogadores, foram construídas algumas expressões. Avalie cada expressão abaixo, observando as condições de cada jogador, descrito na tabela acima. Marque com V( Verdadeiro) ou F(Falso) o resultado de cada expressão.
+
+Dica: Lembre-se de substituir as variáveis "pontos", "moedas" e "enfrentou_chefe" pelos valores correspondentes para cada jogador.
+
+Expressões:
+(   )Jogador 1: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Sim)
+(   )Jogador 2: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Não)
+(   ) Jogador 3: (pontos < 100) or (moedas < 5) or (enfrentou_chefe == Sim)
+(   ) Jogador 4: (pontos != 100) or (moedas != 5) or not(enfrentou_chefe == Não) 
+ChatGPT
+Para avaliar cada expressão, vamos utilizar os dados da tabela para substituir as variáveis "pontos", "moedas" e "enfrentou_chefe" pelos valores correspondentes para cada jogador. Vamos analisar cada expressão:
+
+Dados dos jogadores:
+
+Jogador 1:
+
+Pontos: 150
+Moedas: 7
+Enfrentou Chefe: Sim
+Jogador 2:
+
+Pontos: 80
+Moedas: 10
+Enfrentou Chefe: Não
+Jogador 3:
+
+Pontos: 50
+Moedas: 3
+Enfrentou Chefe: Sim
+Jogador 4:
+
+Pontos: 120
+Moedas: 5
+Enfrentou Chefe: Sim
+Agora, vamos avaliar cada expressão:
+
+( ) Jogador 1: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Sim)
+Substituindo os valores:
+(150 >= 100) and (7 >= 5) and ("Sim" == "Sim")
+Verdadeiro and Verdadeiro and Verdadeiro
+Resultado: Verdadeiro (V)
+
+( ) Jogador 2: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Não)
+Substituindo os valores:
+(80 >= 100) and (10 >= 5) and ("Não" == "Não")
+Falso and Verdadeiro and Verdadeiro
+Resultado: Falso (F)
+
+( ) Jogador 3: (pontos < 100) or (moedas < 5) or (enfrentou_chefe == Sim)
+Substituindo os valores:
+(50 < 100) or (3 < 5) or ("Sim" == "Sim")
+Verdadeiro or Verdadeiro or Verdadeiro
+Resultado: Verdadeiro (V)
+
+( ) Jogador 4: (pontos != 100) or (moedas != 5) or not(enfrentou_chefe == Não)
+Substituindo os valores:
+(120 != 100) or (5 != 5) or not("Sim" == "Não")
+Verdadeiro or Falso or Verdadeiro (o operador 'not' nega a comparação "Sim" == "Não")
+Resultado: Verdadeiro (V)
+
+Portanto, a avaliação das expressões para cada jogador é:
+
+(V) Jogador 1
+(F) Jogador 2
+(V) Jogador 3
+(V) Jogador 4
