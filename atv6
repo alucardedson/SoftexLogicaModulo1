@@ -1,0 +1,29 @@
+function fazerPergunta(pergunta) {
+  let resposta = prompt(pergunta + " (Sim/Não)").trim().toLowerCase()
+  while (resposta !== "sim" && resposta !== "não") {
+    alert("Por favor, responda apenas com 'Sim' ou 'Não'.");
+    resposta = prompt(pergunta + " (Sim/Não)").trim().toLowerCase()
+  }
+  return resposta === "sim";
+}
+
+function descobrirMeioDeTransporte() {
+  alert("Vamos descobrir qual seu meio de transporte.")
+
+  if (fazerPergunta("É terrestre?")) {
+    if (fazerPergunta("Tem motor?")) {
+      if (fazerPergunta("É pesado?")) {
+        alert("Então, o transporte escolhido foi o trator.")
+      } else {
+        alert("Então, o transporte escolhido foi a moto.")
+      }
+    } else {
+      alert("Então, o transporte escolhido foi a bicicleta.")
+    }
+  } else {
+    alert("Desculpe, não foi possível determinar o meio de transporte.")
+  }
+}
+
+descobrirMeioDeTransporte()
+
